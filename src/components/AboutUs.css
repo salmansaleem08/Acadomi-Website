@@ -1,0 +1,156 @@
+/* -------------------------------------------------
+   AboutUs – DuoFast Theme (dark teal + lime)
+   ------------------------------------------------- */
+.about-hero {
+  position: relative;
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+}
+.about-hero__overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, rgba(10,61,61,0.4), rgba(10,61,61,0.8));
+  z-index: 1;
+}
+.about-hero__content {
+  position: relative;
+  z-index: 2;
+  max-width: 900px;
+  padding: 0 1.5rem;
+}
+.about-hero__title {
+  font-size: 5.5rem;
+  font-weight: 900;
+  margin: 0 0 1rem;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+.about-hero__subtitle {
+  font-size: 1.35rem;
+  font-weight: 500;
+  color: #ccc;
+}
+
+/* Content wrapper */
+.about-content {
+  background: #0a3d3d;
+  padding-bottom: 6rem;
+}
+
+/* Sections */
+.about-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+.about-section__title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #c4e538;
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: .05em;
+}
+.about-section__text {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #ddd;
+  max-width: 800px;
+  margin: 0 auto 1.2rem;
+}
+.about-list {
+  list-style: none;
+  padding: 0;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: left;
+}
+.about-list li {
+  margin-bottom: .75rem;
+  color: #ddd;
+  font-size: 1.05rem;
+}
+.about-list strong { color: #fff; }
+
+/* Features Grid */
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+.feature-card {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 1.5rem;
+  box-shadow: 0 10px 30px rgba(0,0,0,.1);
+  text-align: left;
+  transition: transform .3s ease;
+}
+.feature-card:hover {
+  transform: translateY(-8px);
+}
+.feature-card__icon {
+  width: 56px;
+  height: 56px;
+  background: #0a3d3d;
+  color: #c4e538;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+.feature-card__icon svg {
+  width: 28px;
+  height: 28px;
+}
+.feature-card__title {
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: #0a3d3d;
+  margin: 0 0 .75rem;
+}
+.feature-card__text {
+  font-size: .95rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Team Grid */
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin: 2rem auto 0;
+  max-width: 900px;
+}
+.team-card {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 1.5rem;
+  box-shadow: 0 10px 30px rgba(0,0,0,.1);
+  text-align: center;
+}
+.team-card__name {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #0a3d3d;
+  margin: 0;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .about-hero__title { font-size: 4.5rem; }
+}
+@media (max-width: 768px) {
+  .about-hero { padding-top: 100px; }
+  .about-section { padding: 3rem 1.5rem; }
+}

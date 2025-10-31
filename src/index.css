@@ -19,3 +19,12 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+
+/* Ensure page starts at top and no default margin */
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}

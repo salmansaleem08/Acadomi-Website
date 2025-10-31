@@ -1,0 +1,93 @@
+/* -------------------------------------------------
+   Landing – DuoFast Hero Theme
+   ------------------------------------------------- */
+.landing-hero {
+  position: relative;
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  padding-top: 90px; /* space for fixed header */
+}
+
+.landing-hero__overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, rgba(10,61,61,0.4), rgba(10,61,61,0.8));
+  z-index: 1;
+}
+
+.landing-hero__content {
+  position: relative;
+  z-index: 2;
+  max-width: 900px;
+  padding: 0 1.5rem;
+}
+
+.landing-hero__title {
+  font-size: 5.5rem;
+  font-weight: 900;
+  margin: 0 0 1.5rem;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  line-height: 1.1;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.landing-hero__title--light {
+  color: #ffffff;
+}
+
+.landing-hero__title--lime {
+  color: #c4e538;
+  display: block;
+}
+
+.landing-btn-group {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+.landing-btn {
+  display: inline-block;
+  padding: 1rem 2.5rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+  text-decoration: none;
+  color: #0a3d3d;
+  background: #c4e538;
+  border: none;
+  border-radius: 50px;
+  text-transform: uppercase;
+  letter-spacing: .5px;
+  cursor: pointer;
+  transition: all .3s ease;
+  box-shadow: 0 4px 15px rgba(196,229,56,.3);
+}
+
+.landing-btn:hover {
+  background: #c4e538;
+
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(196,229,56,.4);
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .landing-hero__title { font-size: 5rem; }
+}
+@media (max-width: 768px) {
+  .landing-hero__title { font-size: 4rem; }
+  .landing-btn-group { flex-direction: column; align-items: center; }
+  .landing-btn { width: 220px; }
+}
+@media (max-width: 480px) {
+  .landing-hero__title { font-size: 3.2rem; }
+}

@@ -1,0 +1,132 @@
+/* -------------------------------------------------
+   Auth Pages (Login + Signup) – DuoFast Theme
+   ------------------------------------------------- */
+.auth-container {
+  min-height: 100vh;
+  background: #0a3d3d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  font-family: 'Montserrat', sans-serif;
+  padding-top: 90px; /* fixed header */
+}
+
+.auth-card {
+  background: #fff;
+  padding: 2.5rem;
+  border-radius: 1.5rem;
+  width: 100%;
+  max-width: 420px;
+  box-shadow: 0 12px 30px rgba(0,0,0,.15);
+  border: 1px solid #c4e538;
+  text-align: center;
+}
+
+.auth-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #0a3d3d;
+  margin: 0 0 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: .05em;
+}
+
+.auth-input-group {
+  margin-bottom: 1.2rem;
+  text-align: left;
+}
+
+.auth-input {
+  width: 100%;
+  padding: 1rem;
+  background: #f8f9fa;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  color: #0a3d3d;
+  font-size: 1rem;
+  transition: all .3s ease;
+}
+
+.auth-input:focus {
+  outline: none;
+  border-color: #c4e538;
+  box-shadow: 0 0 0 3px rgba(196,229,56,.3);
+}
+
+.auth-pass-wrapper {
+  position: relative;
+}
+
+.auth-eye {
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #0a3d3d;
+  cursor: pointer;
+  font-size: .9rem;
+  font-weight: 600;
+}
+
+.auth-error {
+  color: #e63946;
+  font-size: .85rem;
+  display: block;
+  margin-top: .4rem;
+}
+
+.auth-error-general {
+  color: #e63946;
+  text-align: center;
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+
+.auth-submit {
+  width: 100%;
+  padding: 1rem;
+  margin-top: 1rem;
+  background: #c4e538;
+  color: #0a3d3d;
+  border: none;
+  border-radius: 50px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .5px;
+  cursor: pointer;
+  transition: all .3s ease;
+}
+
+.auth-submit:disabled {
+  background: #aaa;
+  cursor: not-allowed;
+}
+
+.auth-submit:hover:not(:disabled) {
+  background: #b3d130;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(196,229,56,.4);
+}
+
+.auth-footer {
+  margin-top: 1.5rem;
+  color: #666;
+  font-size: .95rem;
+}
+
+.auth-link {
+  color: #0a3d3d;
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+.auth-link:hover {
+  color: #c4e538;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .auth-card { padding: 2rem; }
+}
