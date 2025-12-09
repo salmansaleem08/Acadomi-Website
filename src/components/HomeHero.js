@@ -54,7 +54,7 @@ const HomeHero = () => {
 
         <div className="features__card">
           <div className="features__icon"><IconStar /></div>
-          <h3 className="features__title">PodcastModeReversal</h3>
+          <h3 className="features__title">Podcast Mode</h3>
           <p className="features__text">
             Revise anytime, anywhere through AI-generated podcasts from your study material.
           </p>

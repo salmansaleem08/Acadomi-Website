@@ -70,7 +70,7 @@ const Services = () => {
                 <li>Continuous availability for seamless study</li>
               </ul>
             </div>
-            <button className="service-cta">ENQUIRE NOW</button>
+            <Link to="/real-time-teaching" className="service-cta">ENQUIRE NOW</Link>
           </div>
 
           {/* Podcast Mode */}
@@ -89,7 +89,7 @@ const Services = () => {
                 <li>Personalized and accessible revision experience</li>
               </ul>
             </div>
-            <button className="service-cta">ENQUIRE NOW</button>
+            <Link to="/podcast" className="service-cta">ENQUIRE NOW</Link>
           </div>
 
           {/* Group Learning Mode */}

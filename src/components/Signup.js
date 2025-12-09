@@ -19,7 +19,8 @@ const Signup = () => {
       e.username = 'Only lowercase, numbers, _';
     if (!form.email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(form.email))
       e.email = 'Invalid email';
-    if (!form.password || !/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/.test(form.password))
+    // \W matches any "non-word" character (symbols), and we add _ explicitly as it is often considered a "word" char in regex
+    if (!form.password || !/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[\W_]).{8,}$/.test(form.password))
       e.password = '8+ chars, upper, lower, num, symbol';
     setErrors(e);
     return Object.keys(e).length === 0;

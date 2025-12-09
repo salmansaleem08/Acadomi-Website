@@ -9,6 +9,8 @@ import AboutUsPage from './pages/AboutUsPage';   // <-- NEW
 import ManageUploadsPage from './pages/ManageUploadsPage'; // <-- NEW
 import Services from './pages/Services';
 import RoleReversal from './components/RoleReversal';
+import Podcast from './components/Podcast';
+import RealTimeTeachingPage from './components/RealTimeTeachingPage';
 function App() {
   return (
     <Router>
@@ -21,6 +23,9 @@ function App() {
         <Route path="/manage-uploads" element={<ManageUploadsPage />} />
         <Route path="/services" element={<Services />} />
         <Route path="/role-reversal" element={<RoleReversal />} />
+        <Route path="/podcast" element={<Podcast />} />
+        <Route path="/real-time-teaching" element={<RealTimeTeachingPage />} />
+
       </Routes>
     </Router>
   );
